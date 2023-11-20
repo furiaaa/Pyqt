@@ -2,14 +2,14 @@ from PyQt5.QtWidgets import *
 import sys
 
 
-class MainWindow(QMainWindow): # главное окно
+class MainWindow(QMainWindow): 
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi()
     def setupUi(self):
-        self.setWindowTitle("Hello, world") # заголовок окна
-        self.move(300, 300) # положение окна
-        self.resize(200, 200) # размер окна
+        self.setWindowTitle("Hello, world")
+        self.move(300, 300) 
+        self.resize(200, 200) 
         self.lbl = QLabel('<i>Hello</i>, <b>world</b>!!!', self)
         self.lbl.move(30, 30)
         self.lbl2 = QLabel('<u>Ещё одна метка</u>', self)
